@@ -1,8 +1,16 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
-// Variables
-@import 'variables';
+// Communs
+@import 'communs/fonts';
+@import 'communs/variables';
+@import 'communs/base';
+@import 'communs/communs';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Blocks
+@import 'blocks/header';
+@import 'blocks/footer';
+
+// Partials
+
+// Sections
