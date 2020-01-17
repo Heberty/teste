@@ -1,5 +1,25 @@
 const mix = require('laravel-mix');
 
+// Add near top of file
+const ImageminPlugin = require( 'imagemin-webpack-plugin' ).default;
+const CopyWebpackPlugin = require( 'copy-webpack-plugin' );
+
+mix.webpackConfig( {
+    plugins: [
+        new CopyWebpackPlugin([{
+              from: 'resources/images/',
+              to: 'images/min'
+        }]),
+        new ImageminPlugin( {
+//            disable: process.env.NODE_ENV !== 'production', // Disable during development
+            pngquant: {
+                quality: '15-20',
+            },
+            test: /\.(jpe?g|png|gif|svg)$/i,
+        } ),
+    ],
+} );
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management

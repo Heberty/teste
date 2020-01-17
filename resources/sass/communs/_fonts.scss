@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'tt_norms_bold';
+    src: url('/fonts/TypeType - TT Norms Bold.eot');
+    src: local('☺'), url('/fonts/TypeType - TT Norms Bold.woff') format('woff'), url('/fonts/TypeType - TT Norms Bold.ttf') format('truetype'), url('/fonts/TypeType - TT Norms Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tt_norms';
+    src: url('/fonts/TypeType - TT Norms Regular.eot');
+    src: local('☺'), url('/fonts/TypeType - TT Norms Regular.woff') format('woff'), url('/fonts/TypeType - TT Norms Regular.ttf') format('truetype'), url('/fonts/TypeType - TT Norms Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTNorms-ExtraBold";
+    src: url("/fonts/TypeType-TTNorms-ExtraBold.eot"); /* IE9 Compat Modes */
+    src: url("/fonts/TypeType-TTNorms-ExtraBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fonts/TypeType-TTNorms-ExtraBold.otf") format("opentype"), /* Open Type Font */
+    url("/fonts/TypeType-TTNorms-ExtraBold.svg") format("svg"), /* Legacy iOS */
+    url("/fonts/TypeType-TTNorms-ExtraBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/fonts/TypeType-TTNorms-ExtraBold.woff") format("woff"), /* Modern Browsers */
+    url("/fonts/TypeType-TTNorms-ExtraBold.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ttBold {
+    font-family: 'tt_norms_bold';
+    font-weight: 700;
+}
+
+.ttRegular {
+    font-family: 'tt_norms';
+    font-weight: 400;
+}
+
+.ttExtraBold {
+    font-family: "TTNorms-ExtraBold";
+    font-weight: 900;
+}

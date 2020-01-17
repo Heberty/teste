@@ -2,6 +2,6 @@
 
 @section('content')
 
-<h1>Hello World!</h1>
-    
+@include('pages.layouts.sections._section_main')
+
 @endsection
