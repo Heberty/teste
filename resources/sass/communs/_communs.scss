@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
 }
 
+.no-bg {
+    background-color: transparent;
+}
+
 .center-center {
     @extend .d-flex, .align-items-center, .justify-content-center;
 }
@@ -24,6 +28,13 @@
     border: 2px solid $green;
     transition: .2s;
     text-transform: uppercase;
+
+    &.btn-send {
+        height: 60px;
+        border-radius: 50px;
+        width: 100%;
+        font-size: 20px;
+    }
 
 
     &:hover {

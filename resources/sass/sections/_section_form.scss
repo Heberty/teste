@@ -1,0 +1,84 @@
+.section-form {
+    
+    .title-form {
+        @extend .ttExtraBold;
+
+        font-size: 24px;
+        color: $purple;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .custom-file {
+        .custom-file-input {
+
+        }
+
+        .custom-file-label {
+            @extend .ttBold, .center-center, .mx-auto;
+
+            color: $purple;
+            border-radius: 50px;
+            height: 50px;
+            border: 2px solid $green;
+            width: 280px;
+
+            img {
+                margin-right: 8px;
+            }
+
+            @media(min-width: 576px) {
+                width: 368px;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .form-group {
+        margin-bottom: 10px;
+        background-color: $gray-lt;
+        border-radius: 2px;
+        padding: 10px 20px;
+
+        .custom-select {
+            background-image: url($assets_img + 'arrow-down.svg');
+            background-size: 16px;
+        }
+
+        .form-label {
+            @extend .ttRegular;
+
+            text-transform: uppercase;
+            color: $gray;
+            font-size: 10px;
+        }
+
+        textarea.form-control {
+            resize: none;
+            height: 90px;
+        }
+
+        .form-control {
+            border: none;
+            background-color: transparent;
+            border-radius: 0;
+            color: $purple;
+            font-size: 16px;
+            padding: 0;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                @extend .ttRegular;
+
+                color: #D1D0D1;
+                font-size: 16px;
+            }
+        }
+    }
+}

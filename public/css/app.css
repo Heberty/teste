@@ -27,19 +27,43 @@
 }
 
 .ttBold,
+.section-form .custom-file .custom-file-label,
 .section-main .box-title-main .min-title-main,
 .btn-site {
   font-family: "tt_norms_bold";
   font-weight: 700;
 }
 
+.section-form .form-group .form-control::-webkit-input-placeholder {
+  font-family: "tt_norms";
+  font-weight: 400;
+}
+
+.section-form .form-group .form-control::-moz-placeholder {
+  font-family: "tt_norms";
+  font-weight: 400;
+}
+
+.section-form .form-group .form-control:-ms-input-placeholder {
+  font-family: "tt_norms";
+  font-weight: 400;
+}
+
+.section-form .form-group .form-control::-ms-input-placeholder {
+  font-family: "tt_norms";
+  font-weight: 400;
+}
+
 .ttRegular,
+.section-form .form-group .form-control::placeholder,
+.section-form .form-group .form-label,
 .section-main .box-info-main .list-info-main li p {
   font-family: "tt_norms";
   font-weight: 400;
 }
 
 .ttExtraBold,
+.section-form .title-form,
 .section-main .box-info-main .title-info-main,
 .section-main .box-title-main .big-title-main {
   font-family: "TTNorms-ExtraBold";
@@ -54,6 +78,10 @@
   background-repeat: no-repeat;
 }
 
+.no-bg {
+  background-color: transparent;
+}
+
 .btn-site {
   font-size: 12px;
   color: #2E2236;
@@ -65,6 +93,13 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
   text-transform: uppercase;
+}
+
+.btn-site.btn-send {
+  height: 60px;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 20px;
 }
 
 .btn-site:hover {
@@ -7726,7 +7761,8 @@ button.bg-dark:focus {
 .d-flex,
 .section-main .box-info-main .list-info-main li,
 .section-main .box-title-main,
-.center-center {
+.center-center,
+.section-form .custom-file .custom-file-label {
   display: -webkit-box !important;
   display: flex !important;
 }
@@ -8053,6 +8089,7 @@ button.bg-dark:focus {
 
 .justify-content-center,
 .center-center,
+.section-form .custom-file .custom-file-label,
 .center-inline,
 .btn-site {
   -webkit-box-pack: center !important;
@@ -8081,6 +8118,7 @@ button.bg-dark:focus {
 .align-items-center,
 .section-main .box-title-main,
 .center-center,
+.section-form .custom-file .custom-file-label,
 .center-inline,
 .btn-site {
   -webkit-box-align: center !important;
@@ -9431,7 +9469,8 @@ button.bg-dark:focus {
 }
 
 .mr-auto,
-.mx-auto {
+.mx-auto,
+.section-form .custom-file .custom-file-label {
   margin-right: auto !important;
 }
 
@@ -9441,7 +9480,8 @@ button.bg-dark:focus {
 }
 
 .ml-auto,
-.mx-auto {
+.mx-auto,
+.section-form .custom-file .custom-file-label {
   margin-left: auto !important;
 }
 
@@ -11594,5 +11634,96 @@ a.text-dark:focus {
 .section-main .box-info-main .list-info-main li p {
   font-size: 16px;
   color: #fff;
+}
+
+.section-form .title-form {
+  font-size: 24px;
+  color: #2E2236;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.section-form .custom-file .custom-file-label {
+  color: #2E2236;
+  border-radius: 50px;
+  height: 50px;
+  border: 2px solid #4EEF61;
+  width: 280px;
+}
+
+.section-form .custom-file .custom-file-label img {
+  margin-right: 8px;
+}
+
+@media (min-width: 576px) {
+  .section-form .custom-file .custom-file-label {
+    width: 368px;
+  }
+}
+
+.section-form .custom-file .custom-file-label:after {
+  display: none;
+}
+
+.section-form .form-group {
+  margin-bottom: 10px;
+  background-color: #F6F6F7;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+
+.section-form .form-group .custom-select {
+  background-image: url(/images/arrow-down.svg?348f0ece7729ae7c6ed99b66c9bbb63b);
+  background-size: 16px;
+}
+
+.section-form .form-group .form-label {
+  text-transform: uppercase;
+  color: #6C6472;
+  font-size: 10px;
+}
+
+.section-form .form-group textarea.form-control {
+  resize: none;
+  height: 90px;
+}
+
+.section-form .form-group .form-control {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  color: #2E2236;
+  font-size: 16px;
+  padding: 0;
+}
+
+.section-form .form-group .form-control:focus {
+  outline: none;
+}
+
+.section-form .form-group .form-control::-webkit-input-placeholder {
+  color: #D1D0D1;
+  font-size: 16px;
+}
+
+.section-form .form-group .form-control::-moz-placeholder {
+  color: #D1D0D1;
+  font-size: 16px;
+}
+
+.section-form .form-group .form-control:-ms-input-placeholder {
+  color: #D1D0D1;
+  font-size: 16px;
+}
+
+.section-form .form-group .form-control::-ms-input-placeholder {
+  color: #D1D0D1;
+  font-size: 16px;
+}
+
+.section-form .form-group .form-control::placeholder {
+  color: #D1D0D1;
+  font-size: 16px;
 }
 
