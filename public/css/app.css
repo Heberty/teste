@@ -29,6 +29,7 @@
 .ttBold,
 .section-form .custom-file .custom-file-label,
 .section-main .box-title-main .min-title-main,
+.header-site .nav-site ul li a:not(.btn-site),
 .btn-site {
   font-family: "tt_norms_bold";
   font-weight: 700;
@@ -84,8 +85,6 @@
 
 .btn-site {
   font-size: 12px;
-  color: #2E2236;
-  background-color: #4EEF61;
   border-radius: 40px;
   height: 40px;
   padding: 0 40px;
@@ -93,6 +92,52 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
   text-transform: uppercase;
+}
+
+.btn-site.green-purple {
+  background-color: #4EEF61;
+  color: #2E2236;
+  border: 2px solid #4EEF61;
+}
+
+.btn-site.green-purple:hover {
+  background-color: transparent;
+  color: #2E2236;
+}
+
+.btn-site.green-white {
+  background-color: #4EEF61;
+  color: #2E2236;
+  border: 2px solid #4EEF61;
+}
+
+.btn-site.green-white:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-site.btn-header {
+  background-color: #2E2236;
+  color: #fff;
+  border: 2px solid #2E2236;
+}
+
+.btn-site.btn-header:hover {
+  background-color: transparent;
+  color: #2E2236;
+}
+
+@media (min-width: 992px) {
+  .btn-site.btn-header {
+    background-color: #4EEF61;
+    color: #2E2236;
+    border: 2px solid #4EEF61;
+  }
+
+  .btn-site.btn-header:hover {
+    background-color: transparent;
+    color: #fff;
+  }
 }
 
 .btn-site.btn-send {
@@ -104,10 +149,8 @@
 
 .btn-site:hover {
   text-decoration: none;
-  background-color: transparent;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  color: #4EEF61;
 }
 
 .mb10 {
@@ -658,7 +701,8 @@ mark,
 }
 
 .list-unstyled,
-.section-main .box-info-main .list-info-main {
+.section-main .box-info-main .list-info-main,
+.header-site .nav-site ul {
   padding-left: 0;
   list-style: none;
 }
@@ -7761,6 +7805,7 @@ button.bg-dark:focus {
 .d-flex,
 .section-main .box-info-main .list-info-main li,
 .section-main .box-title-main,
+.header-site .nav-site ul,
 .center-center,
 .section-form .custom-file .custom-file-label {
   display: -webkit-box !important;
@@ -7888,7 +7933,8 @@ button.bg-dark:focus {
     display: flex !important;
   }
 
-  .d-lg-inline-flex {
+  .d-lg-inline-flex,
+  .header-site .nav-site ul {
     display: -webkit-inline-box !important;
     display: inline-flex !important;
   }
@@ -8024,7 +8070,8 @@ button.bg-dark:focus {
 }
 
 .flex-column,
-.section-main .box-title-main {
+.section-main .box-title-main,
+.header-site .nav-site ul {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
           flex-direction: column !important;
@@ -8500,7 +8547,8 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 992px) {
-  .flex-lg-row {
+  .flex-lg-row,
+  .header-site .nav-site ul {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
             flex-direction: row !important;
@@ -8593,7 +8641,8 @@ button.bg-dark:focus {
             align-items: flex-end !important;
   }
 
-  .align-items-lg-center {
+  .align-items-lg-center,
+  .header-site .nav-site ul {
     -webkit-box-align: center !important;
             align-items: center !important;
   }
@@ -11567,10 +11616,85 @@ a.text-dark:focus {
   }
 }
 
+.header-site {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 10px 0;
+}
+
+@media (min-width: 992px) {
+  .header-site {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-site {
+    padding: 30px 0;
+  }
+}
+
+.header-site .menu-link img {
+  height: 25px;
+}
+
+.header-site .nav-site {
+  position: fixed;
+  width: 90%;
+  right: -90%;
+  height: 100%;
+  background-color: #4EEF61;
+  text-align: right;
+  padding: 30px;
+}
+
+.header-site .nav-site .menu-link {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .header-site .nav-site {
+    padding: 0;
+    position: static;
+    width: unset;
+    height: unset;
+    background-color: transparent;
+    text-align: left;
+  }
+}
+
+.header-site .nav-site ul {
+  margin-bottom: 0;
+}
+
+.header-site .nav-site ul li {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .header-site .nav-site ul li {
+    margin-bottom: 0;
+    margin-right: 45px;
+  }
+}
+
+.header-site .nav-site ul li:last-child {
+  margin-right: 0;
+}
+
+.header-site .nav-site ul li a:not(.btn-site) {
+  color: #fff;
+}
+
 .section-main {
   background-image: url(/images/image-main.jpg?e983ffc071b858812ec3d1b52eab0a1a);
   position: relative;
-  padding: 90px 0;
+  padding-top: 120px;
+  padding-bottom: 90px;
 }
 
 @media (min-width: 992px) {

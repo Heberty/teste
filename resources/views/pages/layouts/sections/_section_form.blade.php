@@ -52,7 +52,7 @@
                             <label class="custom-file-label" for="inputGroupFile01"><img src="{{ asset('images/min/icon-clip.svg')}}" alt=""> Escolha o arquivo</label>
                         </div>
                     </div>
-                    <button class="btn-site btn-send">Enviar</button>
+                    <button class="btn-site btn-send green-purple">Enviar</button>
                 </form>
             </div>
         </div>

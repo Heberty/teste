@@ -3,7 +3,8 @@
 
     background-image: url($assets_img + 'image-main.jpg');
     position: relative;
-    padding: 90px 0;
+    padding-top: 120px;
+    padding-bottom: 90px;
 
     @media(min-width: 992px) {
         padding: 120px 0;

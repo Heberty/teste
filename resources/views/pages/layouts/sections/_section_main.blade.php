@@ -7,7 +7,7 @@
                     <h1 class="big-title-main">Desenvolvedor PHP</h1>
                 </div>
                 <div class="text-center mb40">
-                    <a href="javascript:;" class="btn-site">Candidata-se</a>
+                    <a href="javascript:;" class="btn-site green-white">Candidata-se</a>
                 </div>
             </div>
             <div class="col-12 col-lg-4">

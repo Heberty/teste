@@ -4,4 +4,5 @@ try {
 
     require('bootstrap');
     require('jquery-mask-plugin');
+    require('bigslide');
 } catch (e) {}
