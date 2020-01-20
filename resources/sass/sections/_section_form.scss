@@ -71,6 +71,7 @@
 
             &:focus {
                 outline: none;
+                box-shadow: unset;
             }
 
             &::placeholder {

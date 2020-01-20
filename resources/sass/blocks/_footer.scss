@@ -1,0 +1,50 @@
+.footer-site {
+    padding: 40px;
+    background-color: $gray-lt;
+
+    .logo,
+    .box-info {
+        margin-bottom: 20px;
+
+        @media(min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .logo {
+        
+        img {
+
+        }
+    }
+
+    .box-info {
+        @extend .text-center;
+
+        strong,
+        p {
+            font-size: 14px;
+            color: $gray;
+        }
+
+        strong {
+            @extend .ttBold;
+        }
+
+        p {
+            @extend .ttRegular;
+
+            margin-bottom: 0;
+        }
+    }
+
+    .link-site {
+        @extend .ttBold;
+
+        color: $green;
+
+        &:hover {
+            color: $purple;
+        }
+    }
+}

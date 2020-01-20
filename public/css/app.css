@@ -29,6 +29,8 @@
 .ttBold,
 .section-form .custom-file .custom-file-label,
 .section-main .box-title-main .min-title-main,
+.footer-site .link-site,
+.footer-site .box-info strong,
 .header-site .nav-site ul li a:not(.btn-site),
 .btn-site {
   font-family: "tt_norms_bold";
@@ -58,7 +60,8 @@
 .ttRegular,
 .section-form .form-group .form-control::placeholder,
 .section-form .form-group .form-label,
-.section-main .box-info-main .list-info-main li p {
+.section-main .box-info-main .list-info-main li p,
+.footer-site .box-info p {
   font-family: "tt_norms";
   font-weight: 400;
 }
@@ -11301,7 +11304,8 @@ button.bg-dark:focus {
 }
 
 .text-center,
-.section-main .box-title-main {
+.section-main .box-title-main,
+.footer-site .box-info {
   text-align: center !important;
 }
 
@@ -11690,6 +11694,41 @@ a.text-dark:focus {
   color: #fff;
 }
 
+.footer-site {
+  padding: 40px;
+  background-color: #F6F6F7;
+}
+
+.footer-site .logo,
+.footer-site .box-info {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-site .logo,
+  .footer-site .box-info {
+    margin-bottom: 0;
+  }
+}
+
+.footer-site .box-info strong,
+.footer-site .box-info p {
+  font-size: 14px;
+  color: #6C6472;
+}
+
+.footer-site .box-info p {
+  margin-bottom: 0;
+}
+
+.footer-site .link-site {
+  color: #4EEF61;
+}
+
+.footer-site .link-site:hover {
+  color: #2E2236;
+}
+
 .section-main {
   background-image: url(/images/image-main.jpg?e983ffc071b858812ec3d1b52eab0a1a);
   position: relative;
@@ -11824,6 +11863,7 @@ a.text-dark:focus {
 
 .section-form .form-group .form-control:focus {
   outline: none;
+  box-shadow: unset;
 }
 
 .section-form .form-group .form-control::-webkit-input-placeholder {
