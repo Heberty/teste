@@ -11799,6 +11799,16 @@ a.text-dark:focus {
   color: #fff;
 }
 
+.section-form {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .section-form {
+    margin-bottom: 100px;
+  }
+}
+
 .section-form .title-form {
   font-size: 24px;
   color: #2E2236;

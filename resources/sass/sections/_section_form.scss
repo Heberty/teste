@@ -1,4 +1,9 @@
 .section-form {
+    margin-bottom: 60px;
+
+    @media(min-width: 992px) {
+        margin-bottom: 100px;
+    }
     
     .title-form {
         @extend .ttExtraBold;
