@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('pages.index');
 })->name('index');
+
+Route::post('/enviar', 'ContatoController@enviaContato')->name('send');
