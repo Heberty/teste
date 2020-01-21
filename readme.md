@@ -11,3 +11,9 @@
 ### Painel adm e envio programado de dados
 
 Infelizmente não consegui emplementar.
+
+### Executando o projeto
+
+1. composer install
+2. php artisan serve
+3. Enjoy!
